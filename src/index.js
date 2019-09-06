@@ -38,7 +38,7 @@ function safeRegex(regex, input, options) {
         if (!timeout)
             timeout = 30000;
         script.runInContext(context, {
-            timeout: timeout.toString()
+            timeout
         });
     }
     catch (e) {
